@@ -1,0 +1,26 @@
+# Files
+
+.DS_Store
+.jekyll-metadata
+_config.local.yml
+_config.version.yml
+rentbits-theme-test.sass
+rentbits-theme-test.scss
+rentbits-theme-test.css
+rentbits-theme-website-local.sass
+css/rentbits-theme-test.css
+css/rentbits-theme-docs.css.map
+PUBLISHING.md
+npm-debug.log
+test.html
+test.sass
+test.scss
+
+# Folders
+
+.sass-cache
+/rentbits-theme
+/icons
+/styles/node_modules
+/versions
+_site

@@ -1,0 +1,16 @@
+# Meta
+
+env:           "production"
+docs_file:     "rentbits-theme-docs.min"
+
+# Build
+
+markdown:      kramdown
+permalink:     pretty
+url:           https://rentalmanager.github.io/theme/
+exclude:       ['icons', 'node_modules', 'templates', '.babelrc', 'rentbits-theme-docs.sass', 'docker-compose.yml', 'package.json', 'yarn.lock']
+
+# Variables
+
+download:      https://github.com/rentalmanager/theme/archive/v0.1.1.zip
+version:       0.1.1
