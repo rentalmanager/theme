@@ -1,0 +1,32 @@
+.dropdown {
+
+}
+
+.dropdown-menu {
+  &:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left:5px;
+    z-index: 1;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $white;
+  }
+}
+
+.dropdown {
+  &.is-right {
+    .dropdown-menu {
+      &:before {
+        right: 5px;
+        left: auto;
+      }
+    }
+  }
+}
+
+.dropdown-content {
+  box-shadow: $card-shadow;
+  min-width: 18rem;
+}

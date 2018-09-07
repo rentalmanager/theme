@@ -1,0 +1,38 @@
+.button {
+  text-transform: uppercase;
+  font-weight: $weight-bold;
+  &.is-text {
+    text-decoration: none;
+  }
+  &.is-normal-text {
+    text-transform: none;
+    font-weight: normal;
+  }
+
+  &.is-smaller {
+    border-radius: $radius-small;
+    font-size: $size-smaller;
+    .icon {
+      height: 1.5em;
+      width: 1.5em;
+    }
+  }
+
+
+  .rb-icon {
+    &:first-child:not(:last-child) {
+      margin-left: calc(-0.375em - #{$button-border-width});
+      margin-right: 0.3875em;
+    }
+    &:last-child:not(:first-child) {
+      margin-left: 0.3875em;
+      margin-right: calc(-0.375em - #{$button-border-width});
+    }
+    &:first-child:last-child {
+      margin-left: calc(-0.375em - #{$button-border-width});
+      margin-right: calc(-0.375em - #{$button-border-width});
+    }
+  }
+
+
+}

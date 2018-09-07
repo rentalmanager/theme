@@ -1,0 +1,122 @@
+// COLOR SET
+$black:         #0b0d0f;
+$black-sec:     #21272c;
+$black-ter:     #364049;
+
+$grey-darker:   #4c5a66;
+$grey-dark:     #627484;
+$grey:          #7b8d9d;
+$grey-medium:   #99a6b3;
+$grey-light:    #b6c0c9;
+$grey-lighter:  #e2e8ef;
+$grey-lightest: #f6f8fC;
+
+$white:         #ffffff;
+$white-ter:     $grey-lightest;
+
+$orange:        #fdb367;
+$yellow:        #f8cf30;
+$green:         #8bd357;
+$turquoise:     #41afa8;
+$cyan:          #00bfff;
+$blue:          #46abff;
+$purple:        #5143c4;
+$red:           #f3686a;
+
+// COLOR SCHEME
+
+$primary:       $blue;
+$success:       $green;
+$info:          $cyan;
+$warning:       $orange;
+$danger:        $red;
+$light:         $grey-lightest;
+$dark:          $grey-darker;
+
+$green-invert: #fff;
+$orange-invert: #fff;
+$warning-invert: #fff;
+
+// FONT SIZES
+
+$size-1: 3rem;
+$size-2: 2.5rem;
+$size-3: 2rem;
+$size-4: 1.5rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.90rem;
+$size-8: 0.85rem;
+$size-9: 0.75rem;
+$size-10: 0.65rem;
+
+// FONT WEIGHTS
+
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+
+// Text colors
+
+$text: $grey-dark;
+$text-light: $grey;
+$text-strong: $grey-darker;
+
+// GENERAL
+$body-background-color:   $grey-lightest;
+$body-size: 15px;
+
+
+// SIZES
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7 $size-8 $size-9 $size-10;
+
+// TYPOGRAPHY
+
+$size-smaller: $size-10;
+$size-small: $size-9;
+$size-normal: $size-8;
+$size-medium: $size-7;
+$size-large: $size-6;
+
+// CONTROLS
+
+$control-base-height: 2.8em;
+
+// BUTTONS
+
+$button-padding-horizontal: 1.6em;
+
+// CUSTOM SHADES & COLORS
+
+$custom-colors: ("purple": $purple);
+$custom-shades: ("grey-medium": $grey-medium, "grey-lightest": $grey-lightest);
+
+// FORMS
+
+$input-shadow: none;
+
+$input-focus-box-shadow-size: none;
+$input-focus-box-shadow-color: '';
+
+// CARDS
+
+$card-shadow: 0 7px 14px 0 rgba($grey-dark,.1), 0 3px 6px 0 rgba($black,.07);
+$card-header-shadow: none;
+
+// ICONS
+$icon-shadow: 0 3px 7px 0 rgba($grey-dark,.1), 0 3px 6px 0 rgba($black,.07);
+
+
+// TABLE
+$table-cell-padding: 0.6em 0.75em;
+
+// TABS
+$tabs-border-bottom-width: 3px;
+$tabs-link-active-border-bottom-color: $primary;
+$tabs-link-padding: 1.3em 1em;
+
+// MODALS
+$modal-background-background-color: rgba($grey, 0.4);
+$modal-content-width: 600px;

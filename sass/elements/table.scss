@@ -1,0 +1,12 @@
+
+.table {
+  thead {
+    background: $light;
+    tr th {
+      font-weight: 400;
+    }
+  }
+  thead>tr>th {
+    border-bottom:1px solid $border;
+  }
+}

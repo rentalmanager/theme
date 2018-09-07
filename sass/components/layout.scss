@@ -1,0 +1,172 @@
+// Layout main
+$sidebar-width: 10.5rem;
+
+.rb-main {
+  overflow: hidden;
+  position: relative;
+}
+
+.rb-figure {
+  @include block();
+  align-items: center;
+  border: 2px solid $white-ter;
+  border-radius: $radius;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  img {
+    margin: 1em;
+  }
+
+  figcaption {
+    align-self: stretch;
+    background-color: $white-ter;
+    color: $text-light;
+    font-size: $size-small;
+    padding: 1em;
+  }
+}
+
+.rb-lead {
+  position: relative;
+}
+
+.rb-side, .rb-side-background {
+  background-color: #eceff6;
+}
+
+.rb-side {
+  position: relative;
+}
+
+.rb-side-background {
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.rb-category {
+  a {
+    &:hover {
+      color: $link;
+    }
+  }
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  &.is-active {
+    .rb-category-toggle {
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+    .rb-category-list {
+      display: block;
+    }
+  }
+}
+
+.rb-category-header {
+  position: relative;
+}
+
+.rb-category-toggle {
+  @include overlay();
+  align-items: center;
+  color: $grey-light;
+  display: flex;
+  justify-content: flex-end;
+  .icon {
+    font-size: 0.75rem;
+    transform-origin: center;
+    transition-duration: $speed;
+    transition-property: transform;
+  }
+}
+
+.rb-category-name {
+  color: $text-strong;
+  position: relative;
+  &.is-active {
+    color: $link;
+  }
+  .tag {
+    border-radius: 2px;
+    font-size: 0.5rem;
+    font-weight: bold;
+    height: 2.25em;
+    margin-left: 0.5em;
+    vertical-align: text-bottom;
+  }
+}
+
+%rb-list {
+  font-size: 0.875rem;
+  li {
+    &:not(:last-child) {
+      margin-bottom: 0.5em;
+    }
+    &.is-past {
+      a {
+        color: $grey-light;
+      }
+    }
+    &.is-current {
+      a {
+        color: $link;
+      }
+    }
+  }
+  a {
+    color: $text-light;
+    &:hover {
+      color: $link;
+    }
+  }
+}
+
+.rb-category-list {
+  @extend %rb-list;
+  display: none;
+  padding: 0.5rem;
+}
+
+@include touch()
+{
+  .rb-lead,
+  .rb-side {
+    padding: 1.5rem;
+  }
+  .rb-side-background {
+    display: none;
+  }
+}
+
+@include desktop() {
+  .rb-duo {
+    display: flex;
+  }
+  .rb-lead {
+    background-color: $body-background-color;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: -3rem;
+    padding: 3rem;
+    &:last-child {
+      margin-right: -3rem;
+    }
+  }
+  .rb-side {
+    flex: 0 0 calc(#{$sidebar-width} + 1.5rem);
+    //flex: 0 0 calc(10.5rem + 1.5rem);
+    padding: 3rem 0 3rem 1.5rem;
+  }
+
+  .rb-main {
+    padding: 0 3rem;
+  }
+}
+

@@ -1,0 +1,42 @@
+$rb-icon-dimensions: 1.5rem;
+$rb-icon-dimensions-small: 1rem;
+$rb-icon-dimensions-medium: 2rem;
+$rb-icon-dimensions-large: 3rem;
+
+.icon {
+  &.is-shadowy {
+    background: $white;
+    border-radius: 10000px;
+  }
+  &.is-last {
+    margin-top: 3px;
+  }
+}
+
+.rb-icon {
+  background: $white;
+  border-radius: 10000px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: $rb-icon-dimensions;
+  width: $rb-icon-dimensions;
+  box-shadow: $icon-shadow;
+  // sizes
+  &.is-small {
+    height: $rb-icon-dimensions-small;
+    width: $rb-icon-dimensions-small;
+  }
+  &.is-medium {
+    height: $rb-icon-dimensions-medium;
+    width: $rb-icon-dimensions-medium;
+  }
+  &.is-large {
+    height: $rb-icon-dimensions-large;
+    width: $rb-icon-dimensions-large;
+  }
+  &.is-transparent {
+    background: transparent;
+    box-shadow: none;
+  }
+}

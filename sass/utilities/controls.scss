@@ -1,0 +1,7 @@
+%control-height {
+  height: $control-base-height !important; // change the height
+}
+
+%control {
+  @extend %control-height;
+}

@@ -1,0 +1,94 @@
+// HELPERS
+
+// Margin and padding helpers
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right);
+
+
+@mixin spacing-helper($target: '')  {
+  @each $space in $spaceamounts {
+    @each $side in $sides {
+      // margin all
+      .m-a-#{$space}#{if($target == '', '', '-' + $target)} {
+        margin: #{$space}px !important;
+      }
+      // margin side
+      .m-#{str-slice($side, 0, 1)}-#{$space}#{if($target == '', '', '-' + $target)} {
+        margin-#{$side}: #{$space}px !important;
+      }
+      // padding all
+      .p-a-#{$space}#{if($target == '', '', '-' + $target)} {
+        padding: #{$space}px !important;
+      }
+      // padding side
+      .p-#{str-slice($side, 0, 1)}-#{$space}#{if($target == '', '', '-' + $target)} {
+        padding-#{$side}: #{$space}px !important;
+      }
+    }
+  }
+}
+
+@include spacing-helper();
+
+@include mobile()
+{
+  @include spacing-helper('mobile');
+}
+
+@include tablet()
+{
+  @include spacing-helper('tablet');
+}
+
+@include touch()
+{
+  @include spacing-helper('touch');
+}
+
+@include desktop()
+{
+  @include spacing-helper('desktop');
+}
+
+@include desktop-only() {
+  @include spacing-helper('desktop-only');
+}
+
+
+// ELLIPSIS
+
+@mixin ellipsis() {
+  display: block;
+  display: -webkit-box;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.is-ellipsis {
+  @include ellipsis();
+  -webkit-line-clamp: 1;
+}
+
+$ellipsis-sizes: (2, 3, 4, 5, 6, 7, 8, 9, 10);
+@each $ellipsis-size in $ellipsis-sizes {
+  .is-ellipsis-#{$ellipsis-size} {
+    @include ellipsis();
+    -webkit-line-clamp: #{$ellipsis-size};
+  }
+}
+
+
+// BORDER Helpers
+$border-positions: (top, left, right, bottom);
+
+.b-a {
+  border: 1px solid $border;
+}
+@each $border-position in $border-positions {
+  .b-#{str-slice($border-position, 0, 1)} {
+    border-#{$border-position}: 1px solid $border;
+  }
+}
+

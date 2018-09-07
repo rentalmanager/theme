@@ -1,0 +1,53 @@
+{
+  "name": "rentbits-theme",
+  "version": "0.1.1",
+  "homepage": "https://rentbits.com",
+  "description": "A Rentbits admin Bulma theme now available for public use",
+  "main": "rentbits-theme.scss",
+  "style": "rentbits-theme/css/rentbits-theme.min.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rentalmanager/theme.git"
+  },
+  "keywords": [
+    "bulma",
+    "admin theme",
+    "bulma theme",
+    "css",
+    "sass",
+    "flexbox",
+    "responsive"
+  ],
+  "author": "Goran Krgovic <goran@rentbits.com> (https://rentbits.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rentalmanager/theme/issues"
+  },
+  "dependencies": {
+    "bulma": "^0.7.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "clean-css-cli": "^4.1.11",
+    "node-sass": "^4.8.3",
+    "postcss-cli": "^5.0.0",
+    "rimraf": "^2.6.2",
+    "bulma": "^0.7.1"
+  },
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/rentbits-theme.css css/rentbits-theme.css",
+    "build-cleancss": "cleancss -o css/rentbits-theme.min.css css/rentbits-theme.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded --source-map true rentbits-theme.scss css/rentbits-theme.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "files": [
+    "css",
+    "sass",
+    "rentbits-theme.scss",
+    "LICENSE",
+    "README.md"
+  ]
+}
