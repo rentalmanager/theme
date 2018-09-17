@@ -3,6 +3,83 @@
 {% include global/head.html %}
 <body class="layout-{{ page.layout }}{% if page.doc-tab %} page-{{ page.doc-tab}}{% endif %}">
 {% include global/navbar.html %}
-{{ content }}
+<main class="rb-main">
+    <div class="rb-side-background"></div>
+    <div class="rb-main-container container">
+        <div class="rb-duo">
+            <div class="rb-lead">
+                {{ content }}
+            </div>
+            <aside class="rb-side">
+                <nav id="categories" class="rb-categories">
+                    <div class="rb-category">
+                        <header class="rb-category-header">
+                            <a class="rb-category-toggle">
+                                <span class="icon">
+                                    <i class="fa fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <a class="rb-category-name" href="/documentation">
+                                <strong>Overview</strong>
+                            </a>
+                        </header>
+                        <ul class="rb-category-list">
+                            <li><a>Installation</a></li>
+                        </ul>
+                    </div>
+                    <div class="rb-category">
+                        <header class="rb-category-header">
+                            <a class="rb-category-toggle">
+                                <span class="icon">
+                                    <i class="fa fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <a class="rb-category-name">
+                                <strong>Elements</strong>
+                                <span class="tag is-success">New!</span>
+                            </a>
+                        </header>
+                        <ul class="rb-category-list">
+                            <li><a>Forms</a></li>
+                            <li><a>Buttons</a></li>
+                            <li><a>Table</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="rb-category">
+                        <header class="rb-category-header">
+                            <a class="rb-category-toggle">
+                                <span class="icon">
+                                    <i class="fa fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <a class="rb-category-name">
+                                <strong>Components</strong>
+                            </a>
+                        </header>
+                        <ul class="rb-category-list">
+                            <li><a>Cards</a></li>
+                            <li><a>Dropdown</a></li>
+                            <li><a>Modal</a></li>
+                            <li><a>Tabs</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </aside>
+        </div>
+    </div>
+</main>
+
+<div class="container m-t-60 m-b-60">
+    <div class="footer-line">
+        <a href="https://bulma.io">
+            <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+        </a><br>
+        This page is a open source. Made with love from <a href="https://rentbits.com">Rentbits</a>.
+    </div>
+</div>
+
+{% include global/footer.html %}
 </body>
 </html>

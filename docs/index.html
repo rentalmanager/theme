@@ -3,4 +3,33 @@ layout: default
 route: index
 ---
 
+<h1 class="title">Rentbits Admin Theme</h1>
+<h2 class="subtitle">A Bulma admin theme made with love from Rentbits.</h2>
 
+<p>
+    At <a href="https://rentbits.com">Rentbits.com</a> we have decided to make our theme available for the general public use. This theme is built on top of the
+    Bulma framework. If you are not familiar with it, please read more on <a href="https://bulma.io" target="_blank">Bulma official website</a>.
+</p>
+
+<div id="ghbtns" class="m-t-30">
+    <iframe src="https://ghbtns.com/github-btn.html?user=rentalmanager&repo=theme&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+    <a href="https://www.npmjs.com/package/rentbits-theme" target="_blank" rel="nofollow">
+        <img src="https://img.shields.io/npm/dm/rentbits-theme.svg" style="height: 30px">
+    </a>
+</div>
+
+{% assign npmInstall = 'npm install rentbits-theme' %}
+
+<pre id="npm" class="intro-npm m-t-30" style="background: #242424; border-radius: 4px; color: #fff; justify-content: space-between; line-height: 20px; padding: 15px 25px;"><code>{{ npmInstall }}</code></pre>
+
+<nav class="m-t-30">
+    <a class="button is-primary is-large" href="{{ site.data.meta.download }}">
+                <span>
+                  <strong>Download</strong>
+                  <small>v{{ site.data.meta.version }}</small>
+                </span>
+    </a>
+    <a class="button is-success is-large" href="/documentation">
+        Documentation
+    </a>
+</nav>
