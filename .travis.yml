@@ -5,3 +5,4 @@ language: sass
 before_install:
 - gem install sass
 - chmod +x test/sass-compiler-tester.sh
+- npm install
