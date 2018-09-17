@@ -1,6 +1,6 @@
 {
   "name": "rentbits-theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://rentbits.com",
   "description": "A Rentbits admin Bulma theme now available for public use",
   "main": "rentbits-theme.scss",
