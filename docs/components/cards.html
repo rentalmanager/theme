@@ -1,0 +1,457 @@
+---
+title: Cards
+layout: default
+route: cards
+---
+
+<nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+        <li><a href="{{ site.url }}">Rentbits Theme</a></li>
+        <li><a href="{{ site.url }}/documentation">Documentation</a></li>
+        <li><a href="{{ site.url }}/components">Components</a></li>
+        <li class="is-active"><a href="#" aria-current="page">Cards</a></li>
+    </ul>
+</nav>
+
+{% capture card_simple %}
+<div class="card">
+    <header class="card-header">
+        <div class="card-header-title">
+            Card title
+        </div>
+        <div class="card-header-action">
+            <div class="buttons">
+                <a class="button">
+              <span class="icon">
+                  <i class="fas fa-edit"></i>
+              </span>
+                    <span>Update details</span>
+                </a>
+                <a class="button">
+              <span class="icon">
+                  <i class="fas fa-edit"></i>
+              </span>
+                    <span>Another action</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="card-content">
+        Here can be whatever you want
+    </div>
+    <footer class="card-footer">
+        <p class="card-footer-title">
+            <span class="is-size-8">Total of 80 results</span>
+        </p>
+        <p class="card-footer-action">
+            <button class="button is-primary">
+                            <span class="icon">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                <span>New</span>
+            </button>
+        </p>
+    </footer>
+</div>
+{% endcapture %}
+
+{% capture card_profile %}
+<div class="card">
+    <header class="card-header">
+        <div class="card-header-title">
+            john@example.org
+        </div>
+        <div class="card-header-action">
+            <div class="buttons">
+                <a class="button is-small">
+                                    <span class="icon">
+                                      <i class="fas fa-edit"></i>
+                                    </span>
+                    <span>Update</span>
+                </a>
+                <a class="button is-small">
+                                  <span class="icon">
+                                      <i class="fas fa-edit"></i>
+                                  </span>
+                    <span>Another</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="card-subheader">
+        <button class="button is-small">Edit info</button>
+    </div>
+    <div class="card-content">
+        <div class="media">
+            <div class="media-left">
+                                <span class="icon">
+                                    <i class="fas has-text-success fa-heart"></i>
+                                </span>
+            </div>
+            <div class="media-content">
+                Trial ended for Monthly unlimited 99.95<br>
+                <span class="help has-text-grey-light">Dec 31, 2017, 4:30 PM</span>
+            </div>
+        </div>
+        <div class="media">
+            <div class="media-left">
+                                <span class="icon">
+                                    <i class="fas has-text-success fa-heart"></i>
+                                </span>
+            </div>
+            <div class="media-content">
+                Trial ended for Monthly unlimited 99.95<br>
+                <span class="help has-text-grey-light">Dec 31, 2017, 4:30 PM</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+
+{% capture card_info %}
+<div class="card">
+    <header class="card-header">
+        <div class="card-header-title">
+            Details
+        </div>
+        <div class="card-header-action">
+            <div class="buttons">
+                <a class="button is-small">
+                                    <span class="icon">
+                                      <i class="fas fa-edit"></i>
+                                    </span>
+                    <span>Update details</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="card-content">
+        <div class="columns">
+            <div class="column">
+                <h3 class="card-content-title">Account information</h3>
+                <dl>
+                    <dt>ID</dt>
+                    <dd>cus_82837gsuw774</dd>
+                    <dt>Created</dt>
+                    <dd>2017/12/04 15:59</dd>
+                    <dt>Description</dt>
+                    <dd class="no-data">No description</dd>
+                </dl>
+            </div>
+            <div class="column">
+                <h3 class="card-content-title">Account information</h3>
+                <dl>
+                    <dt>ID</dt>
+                    <dd>cus_82837gsuw774</dd>
+                    <dt>Created</dt>
+                    <dd>2017/12/04 15:59</dd>
+                    <dt>Description</dt>
+                    <dd class="no-data">No description</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+
+{% capture card_notice %}
+<div class="card">
+    <div class="card-content is-warning has-radius-bottom has-radius-top">
+        <div class="media">
+            <div class="media-left">
+                                <span class="icon">
+                                    <i class="fas fa-info-circle media-left has-text-warning"></i>
+                                </span>
+            </div>
+            <div class="media-body">
+                <strong>You are testing something</strong><br>
+                Radar Overview page is not showing the real metrics in testmode.
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+
+{% capture card_test %}
+<div class="card is-test" data-notice="Test data">
+    <header class="card-header">
+        <div class="card-header-title">
+            Card title
+        </div>
+        <div class="card-header-action">
+            <div class="buttons">
+                <a class="button is-small">
+                                    <span class="icon">
+                                      <i class="fas fa-edit"></i>
+                                    </span>
+                    <span>Update details</span>
+                </a>
+                <a class="button is-small">
+                                  <span class="icon">
+                                      <i class="fas fa-edit"></i>
+                                  </span>
+                    <span>Another action</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="card-content">
+        Here can be whatever you want
+    </div>
+    <footer class="card-footer">
+        <p class="card-footer-title">
+            <span class="is-size-8">Total of 80 results</span>
+        </p>
+        <p class="card-footer-action">
+            <button class="button is-primary is-small">
+                            <span class="icon">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                <span>New</span>
+            </button>
+        </p>
+    </footer>
+</div>
+{% endcapture %}
+
+{% capture card_table %}
+<div class="card">
+    <header class="card-header">
+        <div class="card-header-title">
+            <a class="button is-small">
+                                  <span class="icon">
+                                      <i class="fas fa-edit"></i>
+                                  </span>
+                <span>Filters</span>
+            </a>
+        </div>
+        <div class="card-header-action">
+            <div class="buttons">
+                <a class="button is-small">
+                                    <span class="icon">
+                                      <i class="fas fa-plus"></i>
+                                    </span>
+                    <span>New</span>
+                </a>
+                <a class="button is-small">
+                                  <span class="icon">
+                                      <i class="fas fa-edit"></i>
+                                  </span>
+                    <span>Export</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="card-content is-paddingless">
+        <table class="table is-fullwidth is-hoverable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Address</th>
+                <th>Customer</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>#13</td>
+                <td>26277 Broadway St. New York, NY 29379</td>
+                <td>john.doe@example.com</td>
+                <td>2/2/2018 16:36:23</td>
+            </tr>
+            <tr>
+                <td>#13</td>
+                <td>26277 Broadway St. New York, NY 29379</td>
+                <td>john.doe@example.com</td>
+                <td>2/2/2018 16:36:23</td>
+            </tr>
+            <tr>
+                <td>#13</td>
+                <td>26277 Broadway St. New York, NY 29379</td>
+                <td>john.doe@example.com</td>
+                <td>2/2/2018 16:36:23</td>
+            </tr>
+            <tr>
+                <td>#13</td>
+                <td>26277 Broadway St. New York, NY 29379</td>
+                <td>john.doe@example.com</td>
+                <td>2/2/2018 16:36:23</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer class="card-footer">
+        <p class="card-footer-title">
+            <span class="is-size-8">Total of 80 results</span>
+        </p>
+        <p class="card-footer-action">
+            <button class="button is-primary is-small">
+                            <span class="icon">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                <span>New</span>
+            </button>
+        </p>
+    </footer>
+</div>
+{% endcapture %}
+
+{% capture card_list %}
+<div class="card">
+    <header class="card-header">
+        <div class="card-header-title">
+            Recent
+        </div>
+    </header>
+    <div class="card-content has-background-light has-radius-bottom">
+        <a href="#"><span class="icon"><i class="fas fa-eye"></i></span> <strong>1 recent lead</strong> has been flagged for review.</a> It is for the property <a href="#">#114</a><br>
+        <span class="has-text-grey-light"><span class="icon"><i class="fas fa-info"></i></span> There are no recently opened disputes</span>
+    </div>
+</div>
+{% endcapture %}
+
+<div class="card-example b-b p-b-60">
+    <header class="m-b-30">
+        <h3 class="is-title is-size-4">Default card example</h3>
+        <p>Following is the default card example</p>
+    </header>
+    <div class="card-wrapper">
+        {{card_simple}}
+    </div>
+    <div class="highlight-full m-t-30">
+        {% highlight html %}{{card_simple}}{% endhighlight %}
+    </div>
+</div>
+
+
+<div class="card-example b-b p-b-60 m-t-30">
+    <header class="m-b-30">
+        <h3 class="is-title is-size-4">Card profile</h3>
+        <p>Following is the card profile example</p>
+    </header>
+    <div class="card-wrapper">
+        {{card_profile}}
+    </div>
+    <div class="highlight-full m-t-30">
+        {% highlight html %}{{card_profile}}{% endhighlight %}
+    </div>
+</div>
+
+
+<div class="card-example b-b p-b-60 m-t-30">
+    <header class="m-b-30">
+        <h3 class="is-title is-size-4">Card info</h3>
+        <p>Following is the card info example</p>
+    </header>
+    <div class="card-wrapper">
+        {{card_info}}
+    </div>
+    <div class="highlight-full m-t-30">
+        {% highlight html %}{{card_info}}{% endhighlight %}
+    </div>
+</div>
+
+<div class="card-example b-b p-b-60 m-t-30">
+    <header class="m-b-30">
+        <h3 class="is-title is-size-4">Card is test</h3>
+        <p>Following is the card test example</p>
+    </header>
+    <div class="card-wrapper">
+        {{card_test}}
+    </div>
+    <div class="highlight-full m-t-30">
+        {% highlight html %}{{card_test}}{% endhighlight %}
+    </div>
+</div>
+
+
+<div class="card-example b-b p-b-60 m-t-30">
+    <header class="m-b-30">
+        <h3 class="is-title is-size-4">Card with a table</h3>
+        <p>Following is the card with table example</p>
+    </header>
+    <div class="card-wrapper">
+        {{card_table}}
+    </div>
+    <div class="highlight-full m-t-30">
+        {% highlight html %}{{card_table}}{% endhighlight %}
+    </div>
+</div>
+
+
+<div class="card-example b-b p-b-60 m-t-30">
+    <header class="m-b-30">
+        <h3 class="is-title is-size-4">Card list</h3>
+        <p>Following is the card list example</p>
+    </header>
+    <div class="card-wrapper">
+        {{card_list}}
+    </div>
+    <div class="highlight-full m-t-30">
+        {% highlight html %}{{card_list}}{% endhighlight %}
+    </div>
+</div>
+
+
+<div class="card-example b-b p-b-60 m-t-30">
+    <header class="m-b-30">
+        <h3 class="is-title is-size-4">Card notice</h3>
+        <p>Following is the card notice example</p>
+    </header>
+    <div class="card-wrapper">
+        {{card_notice}}
+
+
+        <div class="card">
+            <div class="card-content is-danger has-radius-bottom has-radius-top">
+                <div class="media">
+                    <div class="media-left">
+                                <span class="icon">
+                                    <i class="fas fa-exclamation-triangle media-left has-text-danger"></i>
+                                </span>
+                    </div>
+                    <div class="media-body">
+                        <strong>You are testing something</strong><br>
+                        Radar Overview page is not showing the real metrics in testmode.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card is-test" data-notice="Test">
+            <div class="card-content is-info has-radius-bottom has-radius-top">
+                <div class="media">
+                    <div class="media-left">
+                                <span class="icon">
+                                    <i class="fas fa-exclamation-triangle media-left has-text-info"></i>
+                                </span>
+                    </div>
+                    <div class="media-body">
+                        <strong>You are testing something</strong><br>
+                        Radar Overview page is not showing the real metrics in testmode.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content is-success has-radius-bottom has-radius-top">
+                <div class="media">
+                    <div class="media-left">
+                                <span class="icon">
+                                    <i class="fas fa-exclamation-triangle media-left has-text-success"></i>
+                                </span>
+                    </div>
+                    <div class="media-body">
+                        <strong>You are testing something</strong><br>
+                        Radar Overview page is not showing the real metrics in testmode.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="highlight-full m-t-30">
+        {% highlight html %}{{card_notice}}{% endhighlight %}
+    </div>
+</div>

@@ -1,5 +1,7 @@
 # Rentbits Admin Theme
 
+DOCS: https://rentalmanager.github.io/theme/
+
 This is a modern admin theme in general made for Rentbits.com and now be available for general use under
 MIT License. It is basically a Bulma theme. 
 
