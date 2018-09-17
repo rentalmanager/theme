@@ -7,7 +7,7 @@ docs_file:     "rentbits-theme-docs.min"
 
 markdown:      kramdown
 permalink:     pretty
-url:           https://rentalmanager.github.io/theme/
+url:           https://rentalmanager.github.io/theme
 exclude:       ['icons', 'node_modules', 'templates', '.babelrc', 'rentbits-theme-docs.sass', 'docker-compose.yml', 'package.json', 'yarn.lock']
 
 # Variables
