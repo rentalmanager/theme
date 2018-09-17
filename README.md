@@ -1,4 +1,4 @@
-# Rentbits Admin Theme
+# Rentbits admin theme [![Travis Build Status](https://api.travis-ci.com/rentalmanager/theme.svg?branch=master)](https://travis-ci.com/rentalmanager/theme)
 
 DOCS: https://rentalmanager.github.io/theme/
 
